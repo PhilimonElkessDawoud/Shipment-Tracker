@@ -8,7 +8,7 @@ import { CreateShipmentRequest, Shipment, UpdateStatusRequest } from '../models/
 })
 export class ShipmentService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:8080/api/shipments';
+  private apiUrl = 'https://shipment-tracker-1-jjq4.onrender.com/api/shipments';
 
   createShipment(request: CreateShipmentRequest): Observable<Shipment> {
     return this.http.post<Shipment>(this.apiUrl, request);

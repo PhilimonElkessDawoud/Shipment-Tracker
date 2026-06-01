@@ -107,7 +107,7 @@ public class ShipmentService {
 
     private String getStatusMessage(ShipmentStatus status) {
         return switch (status) {
-            case ORDER_PLACED -> "Order has been placed";
+            case ORDER_PLACED -> "Order has been placed! Please refresh the page to see it!";
             case PROCESSING -> "Order is being processed";
             case PICKED_UP -> "Package has been picked up";
             case IN_TRANSIT -> "Package is in transit";

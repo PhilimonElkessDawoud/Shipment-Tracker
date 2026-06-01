@@ -25,7 +25,7 @@ export class WebsocketService {
 
   initClient(): void {
     this.client = new Client({
-      brokerURL: 'http://localhost:8080/ws',
+      brokerURL: 'https://shipment-tracker-1-jjq4.onrender.com/ws',
       stompVersions: Versions.default,
       reconnectDelay: 5000,
       heartbeatIncoming: 10000,
